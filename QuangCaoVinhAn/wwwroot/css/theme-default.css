@@ -2074,6 +2074,7 @@ a.order-now{
 .or-image a{
 	position:relative;
 	float:left;
+	width:100%
 }
 .or-image:hover a:before{
 	transform:scale(1);
@@ -3033,9 +3034,9 @@ ul.cate_list li.parent a.active i.fa-minus{
 }
 .pso-content-bottom .step-select-option .pso-icon{
   background-color: #25bce9;
-  background-image: url(../images/image_style/order-step1.png);
+/*  background-image: url(../images/image_style/order-step1.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center;*/
 }
 .pso-content-bottom .step-upload-design .pso-icon{
   background: #e92890;
@@ -6095,7 +6096,7 @@ img{
 .slide-show{
 	position:relative;
 	border-top:1px solid #e4e5e7;
-	border-bottom:1px solid #e4e5e7;
+	border-bottom:1px solid #e4e5e7;	
 }
 .slide-show .tp-bannertimer{
 	display:none !important;
