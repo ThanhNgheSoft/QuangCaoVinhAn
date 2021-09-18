@@ -1,6 +1,4 @@
-﻿@section index {
-    <script src="~/api/menu.js"></script>
-}
+﻿@model QuangCaoVinhAn.Models.CMenu
 
 <!DOCTYPE html>
 <html lang="en">
@@ -91,6 +89,14 @@
                                             <i class="fa fa-chevron-down"></i>
                                         </a>
                                         <ul class="level0">
+
+                                            @foreach (var item in model)
+                                            {
+                                            <li class="level1 nav-1-1 first item">
+                                                <a href="category_grid.html" title="Premium Business Cards">Premium Business Cards</a>
+                                            </li>
+                                            }
+
                                             <li class="level1 nav-1-1 first item">
                                                 <a href="category_grid.html" title="Premium Business Cards">Premium Business Cards</a>
                                             </li>
