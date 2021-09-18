@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@section index {
+    <script src="~/api/menu.js"></script>
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,7 +25,7 @@
             <div class="container">
                 <div class="row">
                     <div class="top-links col-lg-7 col-md-6 col-sm-5 col-xs-6">
-                        <ul>                            
+                        <ul>
                             <li class="hidden-xs">
                                 <a href="#">
                                     <i class="fa fa-facebook"></i>
@@ -71,71 +75,74 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-9 visible-md visible-lg">
-                        <nav id="main-menu" class="main-menu clearfix">
-                            <ul>
-                                <li class="level0 hd-pd">
-                                    <a href="#">Trang Chủ</a>
-                                </li>
-                                <li class="level0 hd-pd">
-                                    <a href="#">Giới Thiệu</a>
-                                </li>
-                                <li class="level0 parent col1 hd-pd">
-                                    <a href="category_grid.html" title="Business Cards">
-                                        <span>Dịch Vụ</span>
-                                        <i class="fa fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="level0">
-                                        <li class="level1 nav-1-1 first item">
-                                            <a href="category_grid.html" title="Premium Business Cards">Premium Business Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-2 item">
-                                            <a href="category_grid.html" title="Free Business Cards">Free Business Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-3 item">
-                                            <a href="category_grid.html" title="Die-Cut Business Cards">Die-Cut Business Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-4 item">
-                                            <a href="category_grid.html" title="Standard Business Cards">Standard Business Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-5 item">
-                                            <a href="category_grid.html" class="Personal Business Cards">Personal Business Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-6 item">
-                                            <a href="category_grid.html" title="Business Card Holders">Business Card Holders</a>
-                                        </li>
-                                        <li class="level1 nav-1-7 item">
-                                            <a href="category_grid.html" title="Networking Cards">Networking Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-8 item">
-                                            <a href="category_grid.html" title="Appointment Cards">Appointment Cards</a>
-                                        </li>
-                                        <li class="level1 nav-1-9 last item">
-                                            <a href="category_grid.html" title="Mommy Cards">Mommy Cards</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="level0 hd-pd">
-                                    <a href="#" title="Marketing">Sản Phẩm Khác</a>
-                                </li>
-                                <li class="level0 hd-pd">
-                                    <a href="#" title="Postcards">Báo giá</a>
-                                </li>
-                                <li class="level0 hd-pd">
-                                    <a href="#">Tin Tức</a>
-                                </li>
-                                <li class="level0 hd-pd">
-                                    <a href="#">Liên Hệ</a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div id="div_menu_sanpham">
+                        <div class="col-lg-8 col-md-9 visible-md visible-lg">
+                            <nav id="main-menu" class="main-menu clearfix">
+                                <ul>
+                                    <li class="level0 hd-pd">
+                                        <a href="#">Trang Chủ</a>
+                                    </li>
+                                    <li class="level0 hd-pd">
+                                        <a href="#">Giới Thiệu</a>
+                                    </li>
+                                    <li class="level0 parent col1 hd-pd">
+                                        <a href="category_grid.html" title="Business Cards">
+                                            <span>Dịch Vụ</span>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="level0">
+                                            <li class="level1 nav-1-1 first item">
+                                                <a href="category_grid.html" title="Premium Business Cards">Premium Business Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-2 item">
+                                                <a href="category_grid.html" title="Free Business Cards">Free Business Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-3 item">
+                                                <a href="category_grid.html" title="Die-Cut Business Cards">Die-Cut Business Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-4 item">
+                                                <a href="category_grid.html" title="Standard Business Cards">Standard Business Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-5 item">
+                                                <a href="category_grid.html" class="Personal Business Cards">Personal Business Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-6 item">
+                                                <a href="category_grid.html" title="Business Card Holders">Business Card Holders</a>
+                                            </li>
+                                            <li class="level1 nav-1-7 item">
+                                                <a href="category_grid.html" title="Networking Cards">Networking Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-8 item">
+                                                <a href="category_grid.html" title="Appointment Cards">Appointment Cards</a>
+                                            </li>
+                                            <li class="level1 nav-1-9 last item">
+                                                <a href="category_grid.html" title="Mommy Cards">Mommy Cards</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level0 hd-pd">
+                                        <a href="#" title="Marketing">Sản Phẩm Khác</a>
+                                    </li>
+                                    <li class="level0 hd-pd">
+                                        <a href="#" title="Postcards">Báo giá</a>
+                                    </li>
+                                    <li class="level0 hd-pd">
+                                        <a href="#">Tin Tức</a>
+                                    </li>
+                                    <li class="level0 hd-pd">
+                                        <a href="#">Liên Hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
                     </div>
                     <div class="col-sm-1 col-sm-offset-5 col-xs-offset-2 col-xs-2 visible-sm visible-xs mbmenu-icon-w">
                         <span class="mbmenu-icon hd-pd">
                             <i class="fa fa-bars"></i>
                         </span>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 headerCS">                        
+                    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 headerCS">
                         <div class="search-w SC-w hd-pd ">
                             <span class="search-icon dropdowSCIcon">
                                 <i class="fa fa-search"></i>
@@ -237,8 +244,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="copy-right">Central - Copyright ©
-                        <script>document.write(new Date().getFullYear())</script> <a href="http://netbaseteam.com/" title="Cmsmart - Magento theme">netbaseteam.com</a>. All Rights Reserved</p>
+                        <p class="copy-right">
+                            Central - Copyright ©
+                            <script>document.write(new Date().getFullYear())</script> <a href="http://netbaseteam.com/" title="Cmsmart - Magento theme">netbaseteam.com</a>. All Rights Reserved
+                        </p>
                         <a href="#" id="back-to-top">
                             <i class="fa fa-chevron-up"></i>
                             Top
