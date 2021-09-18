@@ -8,6 +8,8 @@ namespace QuangCaoVinhAn.Models
     public class CMenu
     {
             public string ID_SAN_PHAM { get; set; }
-            public string TEN_SAN_PHAM { get; set; }           
+            public string TEN_SAN_PHAM { get; set; }         
+
+        }
     }
 }
