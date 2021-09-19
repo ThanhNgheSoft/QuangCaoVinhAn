@@ -24,7 +24,7 @@ namespace QuangCaoVinhAn.Controllers
                 //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
 
                 //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
-                var table = JsonConvert.DeserializeObject<List<CMenu>>(json);
+                var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
                 return View(table);
             }                    
         }
