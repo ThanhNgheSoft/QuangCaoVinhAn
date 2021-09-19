@@ -21,8 +21,11 @@ namespace QuangCaoVinhAn.Controllers
             {
                 webClient.Encoding = Encoding.UTF8;
                 var json = webClient.DownloadString("http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select ID_SAN_PHAM, TEN_SAN_PHAM from T_SAN_PHAM");
-                QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
-                return View(tb_menu);
+                //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
+
+                //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
+                var table = JsonConvert.DeserializeObject<List<CMenu>>(json);
+                return View(table);
             }                    
         }
 
