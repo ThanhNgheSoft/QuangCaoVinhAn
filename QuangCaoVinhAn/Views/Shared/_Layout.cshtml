@@ -1,4 +1,4 @@
-﻿@model QuangCaoVinhAn.Models.CMenu
+﻿
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,11 +89,15 @@
                                             <i class="fa fa-chevron-down"></i>
                                         </a>
                                         <ul class="level0">
-                                            
+
+                                            @foreach (var item in ViewBag.Menu)
+                                            {
                                             <li class="level1 nav-1-1 first item">
-                                                <a href="category_grid.html" title="Premium Business Cards">Premium Business Cards</a>
+                                                <a href="@item.iD_SAN_PHAM" title="Premium Business Cards">@item.teN_SAN_PHAM</a>
                                             </li>
-                                            <li class="level1 nav-1-2 item">
+                                            }
+                                            
+                                            @*<li class="level1 nav-1-2 item">
                                                 <a href="category_grid.html" title="Free Business Cards">Free Business Cards</a>
                                             </li>
                                             <li class="level1 nav-1-3 item">
@@ -116,7 +120,8 @@
                                             </li>
                                             <li class="level1 nav-1-9 last item">
                                                 <a href="category_grid.html" title="Mommy Cards">Mommy Cards</a>
-                                            </li>
+                                            </li>*@
+
                                         </ul>
                                     </li>
                                     <li class="level0 hd-pd">
