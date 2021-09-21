@@ -1,7 +1,7 @@
 ﻿
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Thông tin";
 }
 
 <!--Main Product Detail : Begin-->
@@ -54,6 +54,7 @@
                         <div class="product-shortdescript v-middle">
                             <div class="col-sm-12 col-xs-12">
                                 <div class="v-middle">
+                                    @ViewBag.Info.item("TEN_SAN_PHAM")                                    
                                     <h3>Classic Business Cards</h3>
                                     <ul>
                                         <li><i class="fa fa-check"></i> Thick, premium quality cardstock</li>
@@ -109,9 +110,7 @@
         </div>
     </section><!--Product info : Begin-->
     <!--Step order : Begin-->
-    
     <!--Add to cart : Begin-->
-   
     <!-- Product upload file: Begin-->
     <section class="upload-file-w d-none">
         <div class="container">
