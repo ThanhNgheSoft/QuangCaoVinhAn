@@ -80,7 +80,7 @@ namespace QuangCaoVinhAn.Controllers
         }
 
         [Route("Sanpham/{id}")]
-        public IActionResult Sanpham(string id)
+        public IActionResult sanpham(string id)
         {
             KhoiTao();
             using (var webClient = new System.Net.WebClient())

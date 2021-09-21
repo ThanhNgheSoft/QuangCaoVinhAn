@@ -9,7 +9,7 @@
     <meta name="description" content="Printing template">
     <meta name="author" content="Netbase">
     <!--Add css lib-->
-    <link rel="stylesheet" type="text/css" href="css/style-main.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style-main.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arimo:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:500,300,700,400' rel='stylesheet' type='text/css'>
@@ -68,8 +68,8 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-2 col-sm-4 col-xs-5 @*w-logo*@">
                         <div class="logo hd-pd ">
-                            <a href="index.html">
-                                <img src="images/logo.png" alt="printshop logo">
+                            <a href="#">
+                                <img src="~/images/logo.png" alt="printshop logo">
                             </a>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                         <h2>Quảng Cáo Vĩnh An</h2>
                         <div class="footer-content">
                             <a href="index.html" title="Cmsmart logo footer" class="logo-footer">
-                                <img src="images/footer-logo.png" alt="logo footer">
+                                <img src="~/images/footer-logo.png" alt="logo footer">
                             </a>
                             <ul class="info">
                                 <li>
@@ -281,7 +281,7 @@
                     @foreach (var item in ViewBag.Menu)
                     {
                         <li class="level1 nav-1-1 first item">
-                            <a href="#" title="Premium Business Cards">@item.teN_SAN_PHAM</a>
+                            <a href="#" title="Premium Business Cards">@Html.Raw(@item.teN_SAN_PHAM)</a>
                         </li>
                     }
                 </ul>
@@ -336,15 +336,15 @@
         </ul>
     </nav>
     <!--Add js lib-->
-    <script type="text/javascript" src="js/jquery/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/Chart.js"></script>
-    <script type="text/javascript" src="js/doughnutit.js"></script>
+    <script type="text/javascript" src="~/js/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/js/Chart.js"></script>
+    <script type="text/javascript" src="~/js/doughnutit.js"></script>
     <!--   <script type="text/javascript" src="js/jquery.subscribe-better.js"></script> -->
-    <script type="text/javascript" src="js/slideshow/jquery.themepunch.revolution.js"></script>
-    <script type="text/javascript" src="js/slideshow/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="js/theme-home.js"></script>
+    <script type="text/javascript" src="~/js/slideshow/jquery.themepunch.revolution.js"></script>
+    <script type="text/javascript" src="~/js/slideshow/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="~/js/theme-home.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->

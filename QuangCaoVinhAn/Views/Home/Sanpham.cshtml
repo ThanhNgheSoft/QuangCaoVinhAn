@@ -4,430 +4,158 @@
     ViewData["Title"] = "Home Page";
 }
 
-<!--Main index : Begin-->
-<main class="main index">
-    <!--Home slider : Begin-->
-    <section class="home-slidershow">
-        <div class="slide-show">
-            <div class="vt-slideshow">
-                <ul>
-                    <li class="slide1" data-transition="random">
-                        <img src="images/slider/home/slide1.jpg" alt="" />
-                        @*<div class="tp-caption lfr" data-x="right" data-hoffset="-56" data-y="170" data-start="800" data-speed="2000" data-endspeed="300"><span class="style1"><span class="textcolor">Flyers</span> & Leaflets</span></div>
-                            <div class="tp-caption lfb" data-x="right" data-hoffset="-15" data-y="225" data-start="800" data-speed="2000" data-endspeed="300">
-                                <span class="style2">
-                                    Our A5 flyers and leaflets are our bestselling size.<br>
-                                    This is because they're perfect for potential prospects<br>
-                                    to carry around and are extremely cost effective. We<br>
-                                    currently have an offer of 1000 flyers and leaflets<br>
-                                    for only &pound; 24!
-                                </span>
-                            </div>*@
-                        @*<div class="tp-caption lfr" data-x="right" data-hoffset="-315" data-y="375" data-start="1300" data-speed="2000" data-easing="easeInOutQuint" data-endspeed="300"><a class="btn-sn" href="#">buy now</a></div>*@
-                    </li>
-                    <li class="slide2" data-transition="random">
-                        <img src="images/slider/home/slide2.jpg" alt="" />
-                        @*<div class="tp-caption lfr" data-x="left" data-hoffset="" data-y="170" data-start="800" data-speed="2000" data-endspeed="300"><span class="style1"><span class="textcolor">Flyers</span> & Leaflets</span></div>
-                            <div class="tp-caption lfb" data-x="left" data-hoffset="" data-y="225" data-start="800" data-speed="2000" data-endspeed="300">
-                                <span class="style2">
-                                    Our A5 flyers and leaflets are our bestselling size.<br>
-                                    This is because they're perfect for potential prospects<br>
-                                    to carry around and are extremely cost effective. We<br>
-                                    currently have an offer of 1000 flyers and leaflets<br>
-                                    for only &pound; 24!
-                                </span>
-                            </div>
-                            <div class="tp-caption lfr" data-x="left" data-y="367" data-start="1300" data-speed="2000" data-easing="easeInOutQuint" data-endspeed="300"><a class="btn-sn" href="#">buy now</a></div>*@
-                    </li>
-                    <li class="slide3" data-transition="random">
-                        <img src="images/slider/home/slide3.jpg" alt="" />
-                        @*<div class="tp-caption lft" data-x="left" data-hoffset="" data-y="170" data-start="800" data-speed="2000" data-endspeed="300"><span class="style1"><span class="textcolor">Flyers</span> & Leaflets</span></div>
-                            <div class="tp-caption lfb" data-x="left" data-hoffset="" data-y="225" data-start="800" data-speed="2000" data-endspeed="300">
-                                <span class="style2">
-                                    Our A5 flyers and leaflets are our bestselling size.<br>
-                                    This is because they're perfect for potential prospects<br>
-                                    to carry around and are extremely cost effective. We<br>
-                                    currently have an offer of 1000 flyers and leaflets<br>
-                                    for only &pound; 24!
-                                </span>
-                            </div>
-                            <div class="tp-caption lfl" data-x="left" data-hoffset="" data-y="365" data-start="1300" data-speed="2000" data-easing="easeInOutQuint" data-endspeed="300"><a class="btn-sn" href="#">buy now</a></div>*@
-                    </li>
-                </ul>
+<!--Main Product Detail : Begin-->
+<main class="main" id="product-detail">
+    <!--Breadcrumb : Begin-->
+    <section class="header-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 hidden-xs">
+                    <h1 class="mh-title">Classic Business Cards</h1>
+                </div>
+                <div class="breadcrumb-w col-sm-8">
+                    <span class="hidden-xs">You are here:</span>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="http://netbaseteam.com/">Home</a>
+                        </li>
+                        <li>
+                            <a href="category_grid.html">Business Cards</a>
+                        </li>
+                        <li>
+                            <span>Classic Business Cards</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-    <!--Home Category : Begin-->
-    <section id="aboutus" class="pr-main" style="padding-top:100px">
+    </section><!--Breadcrumb : End-->
+    <!--Product info : Begin-->
+    <section class="product-info-w">
         <div class="container">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <img src="images/abouts/about01.jpg" class="img-gioithieungan">
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="top">
-                    <h2><span><b>Quảng cáo Vĩnh An</b></span></h2>
-                    @foreach(var item in ViewBag.test)
-            {
-                <p>@item.iD_SAN_PHAM</p>
-            }
-                    <p>Chuyên thiết kế / thi công các lĩnh vực: Thi công bảng hiệu quảng cáo, ốp Aluminium, thi công quảng cáo ngoài trời, trang trí nội thất, thi công gian hàng hội chợ, tổ chức sự kiện và cung cấp PG/Model/MC...</p>
-                    <p>Ý tưởng, sự sáng tạo và chất lượng sản phẩm là mục tiêu hàng đầu của chúng tôi nhằm mang đến sản phẩm tốt nhất cho khách hàng.</p>
-                    <p>Với đội ngũ công nhân lâu năm và nhân viên nhiệt tình, có nhiều kinh nghiệm, Vĩnh An luôn cam kết đem đến cho khách hàng những sản phẩm và dịch vụ tốt nhất trong tất cả các lĩnh vực mà công ty kinh doanh.</p>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#features" aria-controls="features" role="tab" data-toggle="tab">Features</a></li>
+                        <li role="presentation"><a href="#ideals" aria-controls="ideals" role="tab" data-toggle="tab">Ideals</a></li>
+                        <li role="presentation"><a href="#paper" aria-controls="paper" role="tab" data-toggle="tab">Paper & Specs</a></li>
+                    </ul>
                 </div>
+            </div>
 
-            </div>
-        </div>
-    </section>
-    <!--Home Trust : Begin-->
-    <section class="product-step-order hidden-xs">
-        <div class="container">
             <div class="row">
-                <div class="col-md-12 pso-header">
-                    <h3>TẠI SAO LỰA CHỌN CHÚNG TÔI?</h3>
-                </div>
-            </div>
-            <div class="pso-content">
-                <div class="pso-content-top row">
-                    <div class="col-md-4 col-sm-4">
-                        <span class="line-number"></span>
-                        <span class="pso-number border-radius-50 d-block">1</span>
-                        <span class="line-number2 d-block"></span>
-                    </div>
-                    <div class="col-sm-4">
-                        <span class="line-number"></span>
-                        <span class="pso-number border-radius-50 d-block">2</span>
-                        <span class="line-number2"></span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 d-block">
-                        <span class="line-number"></span>
-                        <span class="pso-number border-radius-50 d-block">3</span>
-                        <span class="line-number2 d-block"></span>
-                    </div>
-                </div>
-                <div class="pso-content-bottom row">
-                    <div class="col-md-4 col-sm-4 step-select-option">
-                        <span class="pso-icon border-radius-50 d-block">
-                            <i class="fa fa-check"></i>
-                        </span>
-                        <h3>KHẢO SÁT ĐO ĐẠC MIỄN PHÍ</h3>
-                        <p class="pso-text">
-                            Qúy khách có nhu cầu làm bảng quảng cáo chỉ cần gọi ngay cho chúng tôi sẽ có nhân viên liên hệ tư vấn, khảo sát mặt bằng, đo đạc chính sát để thi công.
-                        </p>
-                    </div>
-                    <div class="col-sm-4 step-upload-design">
-                        <span class="pso-icon border-radius-50 d-block">
-                            <i class="fa fa-file-text-o"></i>
-                            <i class="fa fa-arrow-circle-o-up"></i>
-                        </span>
-                        <h3>THIẾT KẾ 2D – 3D MIỄN PHÍ</h3>
-                        <p class="pso-text">
-                            Một bản thiết kế đẹp là vô cùng quan trọng để cho ra một sản phẩm đẹp. Với đội ngũ thiết kế nhiều năm kinh nghiệm và tính thẩm mỹ cao, chắc chắn sẽ làm quý khách hàng lòng.
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 step-checkout">
-                        <span class="pso-icon border-radius-50 d-block">
-                            <i class="fa fa-paper-plane"></i>
-                        </span>
-                        <h3>THI CÔNG – GIAO HÀNG NHANH CHÓNG</h3>
-                        <p class="pso-text">
-                            Từ khi nhận đơn hàng đến khi lên thiết kế, thi công hoàn thành sản phẩm nhanh nhất chỉ từ 3-7 ngày, chúng tôi cam đoan luôn đáp ứng được yêu cầu của những khách hàng khó tính nhất.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 pso-footer">
-                    <i class="fa fa-angle-double-down border-radius-50"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Home Trust : End-->
-    <!--Home Promotions Products : Begin -->
-    <section class="home-promotion-product home-product parten-bg home-out-recent" style="margin-top:100px; margin-bottom:100px">
-        <div class="container">
-            <div class="row">
-                <div class="block-title-w">
-                    <h2 class="block-title">DỊCH VỤ CHÍNH CỦA CHÚNG TÔI</h2>
-                    <span class="icon-title">
-                        <span></span>
-                        <i class="fa fa-star"></i>
-                    </span>
-                </div>
-                <ul class="slider-w slider-owl">
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-01.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/hd-01.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section><!--Home Promotions Products : End -->
-    <!--Home Testimonials : Begin -->
-    <section class="home-testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="tes-block" id="testimonial">
-                    <div class="slider-inner">
-                        <div class="wrap-item">
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
-                                    </div>
-                                </div>
+                <div class="tab-content clearfix">
+                    <div role="tabpanel" class="tab-pane active" id="features">
+                        <div class="product-image v-middle">
+                            <div class="col-sm-12 col-xs-12">
+                                <img src="~/images/img-paper.png" alt="ideal 1">
                             </div>
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
-                                    </div>
+                        </div>
+                        <div class="product-shortdescript v-middle">
+                            <div class="col-sm-12 col-xs-12">
+                                <div class="v-middle">
+                                    <h3>Classic Business Cards</h3>
+                                    <ul>
+                                        <li><i class="fa fa-check"></i> Thick, premium quality cardstock</li>
+                                        <li><i class="fa fa-check"></i> Vibrant full color printing</li>
+                                        <li><i class="fa fa-check"></i> Gloss, matte or uncoated finish</li>
+                                        <li><i class="fa fa-check"></i> Standard, square, slim or any custom size</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div role="tabpanel" class="tab-pane" id="ideals">
+                        <div class="col-md-8 col-md-offset-2 col-xs-12 ideals-w">
+                            <div class="ideal">
+                                <img src="~/images/img-paper.png" alt="ideal 1">
+                            </div>
+                            <div class="ideal">
+                                <img src="~/images/product/details/ideal-2.jpg" alt="ideal 2">
+                            </div>
+                            <div class="ideal">
+                                <img src="~/images/product/details/ideal-3.jpg" alt="ideal 3">
+                            </div>
+                            <div class="ideal">
+                                <img src="~/images/product/details/ideal-4.jpg" alt="ideal 4">
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="paper">
+
+                        <div class="paper-des v-middle">
+                            <div class="col-sm-11 col-sm-offset-1">
+                                <div class="v-middle">
+                                    <h3>13 pt. Cardstock, Uncoated Paper</h3>
+                                    <ul>
+                                        <li><i class="fa fa-check"></i> Lighter weight uncoated cardstock</li>
+                                        <li><i class="fa fa-check"></i> Requires scoring prior to folding</li>
+                                        <li><i class="fa fa-check"></i> Paper from sustainable sources, 30% recycled content</li>
+                                        <li><i class="fa fa-check"></i> Some natural fibers may be visible</li>
+                                        <li><i class="fa fa-check"></i> Excellent writability</li>
+                                        <li><i class="fa fa-check"></i> Recommended for Appointment Cards, Invitations and Note Cards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-image v-middle">
+                            <div class="col-sm-12">
+                                <img src="~/images/img-paper.png" alt="ideal 1" class="v-middle">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!--Home ours service : Begin -->
-    <section class="or-service" style="padding-top: 100px; padding-bottom: 100px">
+    </section><!--Product info : Begin-->
+    <!--Step order : Begin-->
+    
+    <!--Add to cart : Begin-->
+   
+    <!-- Product upload file: Begin-->
+    <section class="upload-file-w d-none">
         <div class="container">
             <div class="row">
-                <div class="block-title-w">
-                    <h2 class="block-title">HOẠT ĐỘNG MỚI NHẤT CỦA CHÚNG TÔI</h2>
-                    <span class="icon-title">
-                        <span></span>
-                        <i class="fa fa-star"></i>
-                    </span>
-                </div>
-                <div class="or-service-w">
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-01.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
+                <div class="col-md-6 col-offset-md-3">
+                    <a id="close-upload-popup">
+                        <i></i>
+                    </a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Upload File</h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-01.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="btn btn-success fileinput-button">
+                                <i class="glyphicon glyphicon-plus"></i>
+                                <span>Add files...</span>
+                                <input type="file" name="files[]" multiple="">
+                            </span>
                         </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary start">
+                                <span>Upload</span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-02.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary cancel">
+                                <span>Cancel</span>
+                            </button>
                         </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary delete">
+                                <span>Delete</span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-01.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-02.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-01.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-02.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 or-block">
-                        <div class="or-image">
-                            <a href="#">
-                                <img src="~/images/Hoatdong/hd-01.jpg" alt="service-01" class="img-hoatdong" />
-                            </a>
-                        </div>
-                        <div class="or-title">
-                            <a href="#">THI CÔNG BẢNG ALU CHỮ INOX tại phường 2</a>
+                        <div class="col-md-2">
+                            <input type="checkbox" class="toggle">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--Home Promotions Products : Begin -->
-    <section class="home-promotion-product home-product parten-bg product-step-order" style="padding-top: 100px; padding-bottom: 100px">
-        <div class="container">
-            <div class="row">
-                <div class="block-title-w">
-                    <h2 class="block-title">TIN TỨC MỚI</h2>
-                    <span class="icon-title">
-                        <span></span>
-                        <i class="fa fa-star"></i>
-                    </span>
-                </div>
-                <ul class="slider-w slider-owl">
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/tt-01.jpg" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="#" title="product" class="product-name">Báo giá làm biển hiệu công ty – báo giá mới nhất năm 2021</a>
-                            <p>Hiện nay, nhu cầu làm biển hiệu công ty của các doanh nghiệp đang ngày một nhiều hơn. Điều này đồng nghĩa với việc nhu cầu tìm hiểu giá cả làm biển hiệu công ty cũng tăng lên chóng mặt.</p>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="images/product/263x263/1.jpg" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="#" title="product" class="product-name">Báo giá làm biển hiệu công ty – báo giá mới nhất năm 2021</a>
-                            <p>Hiện nay, nhu cầu làm biển hiệu công ty của các doanh nghiệp đang ngày một nhiều hơn. Điều này đồng nghĩa với việc nhu cầu tìm hiểu giá cả làm biển hiệu công ty cũng tăng lên chóng mặt.</p>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/hd-01.jpg" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="#" title="product" class="product-name">Báo giá làm biển hiệu công ty – báo giá mới nhất năm 2021</a>
-                            <p>Hiện nay, nhu cầu làm biển hiệu công ty của các doanh nghiệp đang ngày một nhiều hơn. Điều này đồng nghĩa với việc nhu cầu tìm hiểu giá cả làm biển hiệu công ty cũng tăng lên chóng mặt.</p>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/tt-01.jpg" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="#" title="product" class="product-name">Báo giá làm biển hiệu công ty – báo giá mới nhất năm 2021</a>
-                            <p>Hiện nay, nhu cầu làm biển hiệu công ty của các doanh nghiệp đang ngày một nhiều hơn. Điều này đồng nghĩa với việc nhu cầu tìm hiểu giá cả làm biển hiệu công ty cũng tăng lên chóng mặt.</p>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="images/product/263x263/1.jpg" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="#" title="product" class="product-name">Báo giá làm biển hiệu công ty – báo giá mới nhất năm 2021</a>
-                            <p>Hiện nay, nhu cầu làm biển hiệu công ty của các doanh nghiệp đang ngày một nhiều hơn. Điều này đồng nghĩa với việc nhu cầu tìm hiểu giá cả làm biển hiệu công ty cũng tăng lên chóng mặt.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section><!--Home Promotions Products : End -->
-    <!--Home Testimonials : Begin -->
-
-</main>
+    <!-- Product upload file: End-->
+</main><!-- Main Product Detail: End -->
 <!--Footer : Begin-->
