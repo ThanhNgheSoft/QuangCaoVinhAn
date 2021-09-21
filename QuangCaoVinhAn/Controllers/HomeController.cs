@@ -60,33 +60,23 @@ namespace QuangCaoVinhAn.Controllers
                 }
                 ViewBag.image = "/images/avatar-logo.jpg";
             }
-            //menu
+            //Menu
             using (var webClient = new System.Net.WebClient())
             {
                 webClient.Encoding = Encoding.UTF8;
                 var json = webClient.DownloadString("http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select ID_SAN_PHAM, TEN_SAN_PHAM from T_SAN_PHAM");
                 //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
-
                 //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
                 var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
-                ViewBag.Menu = table;                
+                ViewBag.Menu = table;              
             }
         }
         public IActionResult Index()
         {
-            KhoiTao();
-            using (var webClient = new System.Net.WebClient())
-            {
-                webClient.Encoding = Encoding.UTF8;
-                var json = webClient.DownloadString("http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select ID_SAN_PHAM, TEN_SAN_PHAM from T_SAN_PHAM");
-                //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
-
-                //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
-                var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
-                ViewBag.test = table;
-                return View(table);
+            KhoiTao();            
+            {             
+                return View();
             }
-
         }
 
         [Route("Sanpham/{id}")]
