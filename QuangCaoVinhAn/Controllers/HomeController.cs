@@ -89,13 +89,14 @@ namespace QuangCaoVinhAn.Controllers
                 var strSQL = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select ID_SAN_PHAM, TEN_SAN_PHAM from T_SAN_PHAM where ID_SAN_PHAM = '" + 30176 + "'";
                 var json = webClient.DownloadString(strSQL);
                 //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
-
+                
                 //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
                 var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
                 //ViewBag.Info = table;
+                
                 foreach (var item in table)
                 {
-                    ViewBag.Info = item;
+                    ViewBag.Ten_San_Pham = item.teN_SAN_PHAM;
                 }
                     
                 return View(table);
