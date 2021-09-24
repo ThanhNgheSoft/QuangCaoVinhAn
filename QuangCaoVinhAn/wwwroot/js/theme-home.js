@@ -265,7 +265,7 @@
 		 	}
 		};   
 		jQuery(window).on('scroll', function() {  
-		   inView(); 
+		   //inView(); 
 		   addClassView('.trust-w','.trust-w');
 		   addClassView('.home-out-recent .tab-content','.home-out-recent .tab-content');
 		   parallax();
