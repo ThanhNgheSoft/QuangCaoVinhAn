@@ -74,7 +74,16 @@ namespace QuangCaoVinhAn.Controllers
         public IActionResult Index()
         {
             KhoiTao();            
-            {             
+            {
+                using (var webClient = new System.Net.WebClient())
+                {
+                    webClient.Encoding = Encoding.UTF8;
+                    var strSQL_SanPhamChinh = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select SP.ID_SAN_PHAM, SP.TEN_SAN_PHAM, REPLACE(ASP.LINK_ANH, '..','') as LINK_ANH from T_SAN_PHAM SP, T_ANH_SAN_PHAM ASP where SP.ID_SAN_PHAM = ASP.ID_SAN_PHAM";
+                    var json = webClient.DownloadString(strSQL_SanPhamChinh);
+                    var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CT_SAN_PHAM>>(json);
+                    ViewBag.SanPhamChinh = table;
+                    ViewBag.TenMien = "https://adminweb.vnpage.vn";
+                }
                 return View();
             }
         }

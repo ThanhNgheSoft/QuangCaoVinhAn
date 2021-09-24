@@ -151,15 +151,19 @@
                     </span>
                 </div>
                 <ul class="slider-w slider-owl">
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-01.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
+                    @foreach (var item in ViewBag.SanPhamChinh)
+                    {
+                        <li class="pro-item">
+                            <div class="product-image-action">
+                                <img src="https://adminweb.vnpage.vn/@item.LINK_ANH" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="~/sanpham/@item.ID_SAN_PHAM" title="product" class="product-name">@Html.Raw(@item.TEN_SAN_PHAM)</a>
+                            </div>
+                        </li>  
+                    }
+
+                    @*<li class="pro-item">
                         <div class="product-image-action">
                             <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
                         </div>
@@ -198,7 +202,7 @@
                         <div class="product-info">
                             <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
                         </div>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
         </div>

@@ -21,6 +21,7 @@ namespace QuangCaoVinhAn.Models
     {
         public string ID_SAN_PHAM { get; set; }
         public string TEN_SAN_PHAM { get; set; }
+        public string LINK_ANH { get; set; }
         public string ID_LOAI_SAN_PHAM { get; set; }
         public string MA_SAN_PHAM { get; set; }
         public string TEN_URL { get; set; }
