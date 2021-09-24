@@ -7,8 +7,8 @@ namespace QuangCaoVinhAn.Models
 {
     public partial class CMenu
     {
-            public string iD_SAN_PHAM { get; set; }
-            public string teN_SAN_PHAM { get; set; }        
+            public string ID_SAN_PHAM { get; set; }
+            public string TEN_SAN_PHAM { get; set; }        
     }
 
    
