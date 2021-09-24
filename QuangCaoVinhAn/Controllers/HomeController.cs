@@ -86,24 +86,33 @@ namespace QuangCaoVinhAn.Controllers
             using (var webClient = new System.Net.WebClient())
             {               
                 webClient.Encoding = Encoding.UTF8;
+                //id = "30176";
                 //30176
-                var strSQL = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select ID_SAN_PHAM, TEN_SAN_PHAM from T_SAN_PHAM where ID_SAN_PHAM = '" + id + "'";
+                var strSQL = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select * from T_SAN_PHAM where ID_SAN_PHAM = '" + id + "'";
                 var json = webClient.DownloadString(strSQL);
+
+                var strSQL_HinhAnh = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select * from T_SAN_PHAM SP, T_ANH_SAN_PHAM ASP where SP.ID_SAN_PHAM =  ASP.ID_SAN_PHAM and SP.ID_SAN_PHAM = '" + id + "'";
+                var json_HinhAnh = webClient.DownloadString(strSQL_HinhAnh);
                 //QuangCaoVinhAn.Models.CMenu tb_menu = JsonConvert.DeserializeObject<QuangCaoVinhAn.Models.CMenu>(json);
-                
-                //var report = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
-                var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CMenu>>(json);
+
+             
+                var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CT_SAN_PHAM>>(json);
+                var table_HinhAnh = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CT_ANH_SAN_PHAM>>(json_HinhAnh);
                 //ViewBag.Info = table;
 
-               
+                ViewBag.TEN_SAN_PHAM = "";
+                ViewBag.TOM_TAT = "";
+                ViewBag.LINK_ANH = "";
+                ViewBag.NOI_DUNG = "";
 
-                foreach (var item in table)
-                {
-                    ViewBag.Ten_San_Pham = item.TEN_SAN_PHAM;
-                }
-                
-
-
+                if (table.Count > 0) {
+                    ViewBag.TEN_SAN_PHAM = table[0].TEN_SAN_PHAM;
+                    ViewBag.TOM_TAT = table[0].TOM_TAT;
+                    ViewBag.NOI_DUNG = table[0].NOI_DUNG;
+                }                                
+                if (table_HinhAnh.Count > 0) {
+                    ViewBag.LINK_ANH = "https://adminweb.vnpage.vn" + table_HinhAnh[0].LINK_ANH.ToString().Replace("..","");
+                }                
                 return View(table);
             }
 

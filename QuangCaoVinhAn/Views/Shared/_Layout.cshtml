@@ -78,7 +78,7 @@
                             <nav id="main-menu" class="main-menu clearfix">
                                 <ul>
                                     <li class="level0 hd-pd">
-                                        <a href="#">Trang Chủ</a>
+                                        <a href="https://quangcaovinhan.com">Trang Chủ</a>
                                     </li>
                                     <li class="level0 hd-pd">
                                         <a href="#">Giới Thiệu</a>
@@ -92,7 +92,7 @@
                                             @foreach (var item in ViewBag.Menu)
                                             {
                                             <li class="level1 nav-1-1 first item">
-                                                <a href="#" title="Premium Business Cards">@Html.Raw(@item.TEN_SAN_PHAM)</a>
+                                                <a href="~/sanpham/@item.ID_SAN_PHAM" title="Premium Business Cards">@Html.Raw(@item.TEN_SAN_PHAM)</a>
                                             </li>
                                             }
                                             
@@ -280,7 +280,7 @@
                     @foreach (var item in ViewBag.Menu)
                     {
                         <li class="level1 nav-1-1 first item">
-                            <a href="#" title="Premium Business Cards">@Html.Raw(@item.TEN_SAN_PHAM)</a>
+                            <a href="~/sanpham/@item.ID_SAN_PHAM" title="Premium Business Cards">@Html.Raw(@item.TEN_SAN_PHAM)</a>
                         </li>
                     }
                 </ul>
