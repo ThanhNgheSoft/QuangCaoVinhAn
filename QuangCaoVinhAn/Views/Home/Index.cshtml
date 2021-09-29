@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="top">
-                    <h2><span><b>Quảng cáo Vĩnh An</b></span></h2>                    
+                    <h2><span><b>Quảng cáo Vĩnh An</b></span></h2>
                     <p>Chuyên thiết kế / thi công các lĩnh vực: Thi công bảng hiệu quảng cáo, ốp Aluminium, thi công quảng cáo ngoài trời, trang trí nội thất, thi công gian hàng hội chợ, tổ chức sự kiện và cung cấp PG/Model/MC...</p>
                     <p>Ý tưởng, sự sáng tạo và chất lượng sản phẩm là mục tiêu hàng đầu của chúng tôi nhằm mang đến sản phẩm tốt nhất cho khách hàng.</p>
                     <p>Với đội ngũ công nhân lâu năm và nhân viên nhiệt tình, có nhiều kinh nghiệm, Vĩnh An luôn cam kết đem đến cho khách hàng những sản phẩm và dịch vụ tốt nhất trong tất cả các lĩnh vực mà công ty kinh doanh.</p>
@@ -140,6 +140,7 @@
     </section>
     <!--Home Trust : End-->
     <!--Home Promotions Products : Begin -->
+    
     <section class="home-promotion-product home-product parten-bg home-out-recent" style="margin-top:100px; margin-bottom:100px">
         <div class="container">
             <div class="row">
@@ -154,156 +155,158 @@
 
                     @foreach (var item in ViewBag.SanPhamChinh)
                     {
-                        <li class="pro-item">
-                            <div class="product-image-action">
-                                <img src="https://adminweb.vnpage.vn/@item.LINK_ANH" alt="Grouper Business card" class="img-tintuc">
-                            </div>
-                            <div class="product-info">
-                                <a href="~/sanpham/@item.ID_SAN_PHAM" title="product" class="product-name">@Html.Raw(@item.TEN_SAN_PHAM)</a>
-                            </div>
-                        </li>  
+                    <li class="pro-item">
+                        <div class="product-image-action">
+                            <img src="https://adminweb.vnpage.vn/@item.LINK_ANH" alt="Grouper Business card" class="img-tintuc">
+                        </div>
+                        <div class="product-info">
+                            <a href="~/sanpham/@item.ID_SAN_PHAM" title="product" class="product-name">@Html.Raw(@item.TEN_SAN_PHAM)</a>
+                        </div>
+                    </li>
+
                     }
 
                     @*<li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/hd-01.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>
-                    <li class="pro-item">
-                        <div class="product-image-action">
-                            <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
-                        </div>
-                        <div class="product-info">
-                            <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
-                        </div>
-                    </li>*@
+                            <div class="product-image-action">
+                                <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
+                            </div>
+                        </li>
+                        <li class="pro-item">
+                            <div class="product-image-action">
+                                <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
+                            </div>
+                        </li>
+                        <li class="pro-item">
+                            <div class="product-image-action">
+                                <img src="~/images/Hoatdong/hd-01.jpg" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
+                            </div>
+                        </li>
+                        <li class="pro-item">
+                            <div class="product-image-action">
+                                <img src="~/images/Hoatdong/dv-02.jpg" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
+                            </div>
+                        </li>
+                        <li class="pro-item">
+                            <div class="product-image-action">
+                                <img src="~/images/Hoatdong/dv-03.jpg" alt="Grouper Business card" class="img-tintuc">
+                            </div>
+                            <div class="product-info">
+                                <a href="detail.html" title="product" class="product-name">THI CÔNG MẶT DỰNG ALUMINIUM</a>
+                            </div>
+                        </li>*@
                 </ul>
             </div>
         </div>
     </section><!--Home Promotions Products : End -->
     <section class="home-capabititie" style="display:none">
-			<div class="container">
-				<div class="row">
-					<div class="block-title-w">
-						<h2 class="block-title">our capabilities</h2> 
-						<span class="sub-title">Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</span>
-						<span class="icon-title">
-							<span></span>
-							<i class="fa fa-star"></i>
-						</span> 
-					</div>
-					<div class="block-capabititie-w">
-						<div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
-							<div class="block-mydoughnut" id="myDoughnut"> </div>
-							<h2 class="title">huge quantity</h2>
-							<div class="decs">
-							<p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
-							</div>
-						</div>
-						<div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
-							<div class="block-mydoughnut" id="myDoughnut2"> </div>
-							<h2 class="title">on Time</h2>
-							<div class="decs">
-							<p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
-							</div>
-						</div>
-						<div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
-							<div class="block-mydoughnut" id="myDoughnut3"> </div>
-							<h2 class="title">True Color</h2>
-							<div class="decs">
-							<p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
-							</div>
-						</div>
-						<div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
-							<div class="block-mydoughnut" id="myDoughnut4"> </div>
-							<h2 class="title">fast Delivery</h2>
-							<div class="decs">
-							<p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    <!--Home Testimonials : Begin -->
-    @*<section class="home-testimonial">
         <div class="container">
             <div class="row">
-                <div class="tes-block" id="testimonial">
-                    <div class="slider-inner">
-                        <div class="wrap-item">
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                <div class="block-title-w">
+                    <h2 class="block-title">our capabilities</h2>
+                    <span class="sub-title">Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</span>
+                    <span class="icon-title">
+                        <span></span>
+                        <i class="fa fa-star"></i>
+                    </span>
+                </div>
+                <div class="block-capabititie-w">
+                    <div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
+                        <div class="block-mydoughnut" id="myDoughnut"> </div>
+                        <h2 class="title">huge quantity</h2>
+                        <div class="decs">
+                            <p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
+                        <div class="block-mydoughnut" id="myDoughnut2"> </div>
+                        <h2 class="title">on Time</h2>
+                        <div class="decs">
+                            <p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
+                        <div class="block-mydoughnut" id="myDoughnut3"> </div>
+                        <h2 class="title">True Color</h2>
+                        <div class="decs">
+                            <p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
+                        </div>
+                    </div>
+                    <div class="block-capabititie col-md-3 col-sm-3 col-xs-12">
+                        <div class="block-mydoughnut" id="myDoughnut4"> </div>
+                        <h2 class="title">fast Delivery</h2>
+                        <div class="decs">
+                            <p>Mauris sollicitudin dui quisOrci euismod mattis Integer auctor Aenean id turpis eu est iaculis suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home Testimonials : Begin -->
+    @*<section class="home-testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="tes-block" id="testimonial">
+                        <div class="slider-inner">
+                            <div class="wrap-item">
+                                <div class="item">
+                                    <div class="inner">
+                                        <div class="image">
+                                            <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
+                                        </div>
+                                        <div class="tes-name">
+                                            <a href="#">NGuyễn Văn A</a>
+                                        </div>
+                                        <div class="tes-job">
+                                            <span>Giám Đốc - Cty TNHH ABC</span>
+                                        </div>
+                                        <div class="tes-decs">
+                                            <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                                <div class="item">
+                                    <div class="inner">
+                                        <div class="image">
+                                            <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
+                                        </div>
+                                        <div class="tes-name">
+                                            <a href="#">NGuyễn Văn A</a>
+                                        </div>
+                                        <div class="tes-job">
+                                            <span>Giám Đốc - Cty TNHH ABC</span>
+                                        </div>
+                                        <div class="tes-decs">
+                                            <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="inner">
-                                    <div class="image">
-                                        <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
-                                    </div>
-                                    <div class="tes-name">
-                                        <a href="#">NGuyễn Văn A</a>
-                                    </div>
-                                    <div class="tes-job">
-                                        <span>Giám Đốc - Cty TNHH ABC</span>
-                                    </div>
-                                    <div class="tes-decs">
-                                        <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                                <div class="item">
+                                    <div class="inner">
+                                        <div class="image">
+                                            <a href="#"><img src="images/testimonials/1.png" alt="terminal-01" class="img-khachhang" /></a>
+                                        </div>
+                                        <div class="tes-name">
+                                            <a href="#">NGuyễn Văn A</a>
+                                        </div>
+                                        <div class="tes-job">
+                                            <span>Giám Đốc - Cty TNHH ABC</span>
+                                        </div>
+                                        <div class="tes-decs">
+                                            <p>Cảm ơn công ty đã luôn đồng hành cùng thương hiệu Angelwindow của chúng tôi. Tôi vô cùng hài lòng bởi sự nhiệt thành từ nhân sự triển khai của các bạn. Chúng tôi thật sự yên tâm khi giao phó công việc của Angelwindow cho các bạn thực hiện!</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -311,8 +314,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>*@
+        </section>*@
 
     <!--Home ours service : Begin -->
     <section class="or-service" style="padding-top: 100px; padding-bottom: 100px">
