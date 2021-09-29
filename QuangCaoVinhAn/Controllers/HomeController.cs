@@ -81,7 +81,7 @@ namespace QuangCaoVinhAn.Controllers
                     var strSQL_SanPhamChinh = "http://api.support.vnpage.vn/api/runquery/webportal/quangcaovinhan.com/select top 6 SP.ID_SAN_PHAM, SP.TEN_SAN_PHAM, REPLACE(ASP.LINK_ANH, '..','') as LINK_ANH from T_SAN_PHAM SP, T_ANH_SAN_PHAM ASP where SP.ID_SAN_PHAM = ASP.ID_SAN_PHAM";
                     var json = webClient.DownloadString(strSQL_SanPhamChinh);
                     var table = JsonConvert.DeserializeObject<List<QuangCaoVinhAn.Models.CT_SAN_PHAM>>(json);
-                    ViewBag.SanPhamChinh = table;                   
+                    ViewBag.SanPhamChinh = table;                    
                 }
                 return View();
             }
