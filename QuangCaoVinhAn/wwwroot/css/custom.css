@@ -1,3 +1,19 @@
+.logo {
+    padding: 13px !important;
+}
+
+.img-logo {
+    width:auto !important;
+    height: 60px;
+}
+.main-header.menu-fixed .logo.hd-pd {
+    padding: 8px 0 !important;
+}
+.main-header.menu-fixed .logo.hd-pd .img-logo {
+    height: 40px;
+}
+
+
 .slide-show {
     height: 450px;
 }
